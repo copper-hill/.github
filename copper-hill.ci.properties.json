@@ -1,0 +1,13 @@
+{
+    "name": "Copper-Hill",
+    "description": "woot standardization!",
+    "iconName": "example-icon",
+    "categories": [
+        "Node", "js"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile",
+        ".*\\.md$"
+    ]
+}
