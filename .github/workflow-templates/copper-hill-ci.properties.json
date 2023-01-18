@@ -1,9 +1,0 @@
-{
-    "name": "Copper-Hill",
-    "description": "woot standardization!",
-    "iconName": "example-icon",
-    "creator": "Daniel Vaskivaara & Emil Heliste",
-    "categories": [
-        "Node", "js"
-    ]
-}
