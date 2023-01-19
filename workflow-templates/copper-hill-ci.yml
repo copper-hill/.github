@@ -15,4 +15,5 @@ jobs:
 
       - name: Run a one-line script
         run: echo Hello from Copper Hill self-hosted Linux runner!
+      - name: print system info to verify running on self-hosted runner
         run: uname -a
