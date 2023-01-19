@@ -1,4 +1,4 @@
-name: Copper-Hill
+name: Copper Hill
 
 on:
   push:
@@ -8,10 +8,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux]
 
     steps:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: echo Hello from Octo Organization
+        run: echo Hello from Copper Hill self-hosted Linux runner!
+        run: uname -a
