@@ -6,14 +6,7 @@ on:
     branches: [ "main" ]
 jobs:
   test-runner:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     steps:
       - shell: bash
-        env:
-          KEEP_IT_SECRET: ${{ secrets.KEEP_IT_SAFE }}
-        run: |
-          if [ "$KEEP_IT_SECRET" = "12345" ]; then
-            echo "I know your secret!"
-          else
-            echo "still trying to guess..."
-          fi
+        run: echo 'runner context dump ${{ toJSON(runner) }}'
