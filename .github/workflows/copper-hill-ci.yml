@@ -12,4 +12,8 @@ jobs:
         env:
           KEEP_IT_SECRET: ${{ secrets.KEEP_IT_SAFE }}
         run: |
-          echo "Taking a peek: $KEEP_IT_SECRET"
+          if [ "$KEEP_IT_SECRET" = "12345" ]; then
+            echo "I know your secret!"
+          else
+            echo "still trying to guess..."
+          fi
