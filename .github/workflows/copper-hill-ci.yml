@@ -6,7 +6,10 @@ on:
     branches: [ "main" ]
 jobs:
   test-runner:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello from Copper Hill self-hosted Linux runner!"
-      - run: uname -a
+      - shell: bash
+        env:
+          KEEP_IT_SECRET: ${{ secrets.KEEP_IT_SAFE }}
+        run: |
+          echo "Taking a peek: $KEEP_IT_SECRET"
